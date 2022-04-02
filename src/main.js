@@ -1,5 +1,5 @@
 // Requires
-const { app, nativeImage, BrowserWindow, Tray, Menu, ipcMain, BrowserView, shell, powerMonitor. systemPreferences } = require('electron');
+const { app, nativeImage, BrowserWindow, Tray, Menu, ipcMain, BrowserView, shell, powerMonitor, systemPreferences } = require('electron');
 const constants = require('./constants');
 const AutoLaunch = require('auto-launch')
 const contextMenu = require('electron-context-menu');
