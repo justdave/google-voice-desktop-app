@@ -1,5 +1,5 @@
 // Requires
-const { app, nativeImage, BrowserWindow, Tray, Menu, ipcMain, BrowserView, shell, powerMonitor } = require('electron');
+const { app, nativeImage, BrowserWindow, Tray, Menu, ipcMain, BrowserView, shell, powerMonitor. systemPreferences } = require('electron');
 const constants = require('./constants');
 const AutoLaunch = require('auto-launch')
 const contextMenu = require('electron-context-menu');
@@ -61,7 +61,7 @@ ipcMain.on('notification-clicked', () => {
 });
 
 // Ask for permission to use the microphone if the OS requires it
-systemPreferences.askForMediaAccess("microphone");
+success = await systemPreferences.askForMediaAccess("microphone");
 
 // Show window when clicking on macosx dock icon
 app.on('activate', () => {
