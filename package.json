@@ -8,7 +8,6 @@
   "productName": "Voice Desktop",
   "mac": {
    "category": "public.app-category.social-networking",
-   "hardenedRuntime": false,
    "extendInfo": {
     "NSMicrophoneUsageDescription": "This app requires microphone access to record audio."
    }
