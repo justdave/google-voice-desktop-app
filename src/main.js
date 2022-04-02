@@ -60,6 +60,9 @@ ipcMain.on('notification-clicked', () => {
     showMainWindow();
 });
 
+// Ask for permission to use the microphone if the OS requires it
+systemPreferences.askForMediaAccess("microphone");
+
 // Show window when clicking on macosx dock icon
 app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {

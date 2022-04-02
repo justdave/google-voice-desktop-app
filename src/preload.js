@@ -12,7 +12,4 @@
     // click handler attached to them which fires a "notification-clicked" event back at the main process.
     const {notificationShim} = require('./utils/notificationShim');
     notificationShim(appPath);
-
-    // Ask for permission to use the microphone if the OS requires it
-    systemPreferences.askForMediaAccess("microphone");
 })();
